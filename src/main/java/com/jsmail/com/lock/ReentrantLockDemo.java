@@ -4,6 +4,9 @@ import java.util.concurrent.TimeUnit;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
+/**
+ * 可重入锁
+ */
 public class ReentrantLockDemo {
 
     public static void main(String[] args) {

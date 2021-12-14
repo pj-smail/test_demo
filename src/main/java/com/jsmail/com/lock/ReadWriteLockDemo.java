@@ -12,8 +12,8 @@ class MyCache { //资源类
     private ReentrantReadWriteLock rwLock = new ReentrantReadWriteLock();
 
     public void put(String key, Object value) {
+        rwLock.writeLock().lock();
         try {
-            rwLock.writeLock().lock();
             System.out.println(Thread.currentThread().getName() + "正在写" + key);
             try {
                 TimeUnit.MICROSECONDS.sleep(300);
