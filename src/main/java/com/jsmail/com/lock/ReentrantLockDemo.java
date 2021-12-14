@@ -8,6 +8,7 @@ public class ReentrantLockDemo {
 
     public static void main(String[] args) {
         Phone phone = new Phone();
+        //线程操纵资源类
         new Thread(() -> {
             try {
                 phone.sendSms();
