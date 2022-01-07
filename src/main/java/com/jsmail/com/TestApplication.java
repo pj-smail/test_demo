@@ -1,9 +1,11 @@
 package com.jsmail.com;
 
+import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
+@MapperScan("com.jsmail.com.jdbc.dao")
 public class TestApplication {
 
     public static void main(String[] args) {
