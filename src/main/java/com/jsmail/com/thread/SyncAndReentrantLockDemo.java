@@ -14,7 +14,7 @@ import java.util.concurrent.locks.ReentrantLock;
  * 2使用方法
  * synchronized不需要用户去手动释放锁，当synchronized代码执行完后系统会自动让线程释放对锁的占用
  * ReentrantLock则需要用户去手动释放锁若没有主动释放锁，就有可能导致出现死锁现象。
- * 需要Lock( )利lunlock()方法配合try/finally语句块来完成。
+ * 需要Lock( )和unlock()方法配合try/finally语句块来完成。
  * 3等待是否可中断
  * synchronized不可中断，除非抛出异常或者正常运行完成
  * ReentrantLock 可中断，1.设置超时方法 tryLock(Long timeout，TimeUnit unit)
