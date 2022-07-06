@@ -1,6 +1,9 @@
 package com.jsmail.com.jvm;
 
-import sun.security.ec.CurveDB;
+// import sun.security.ec.CurveDB;
+// CurveDB是用来实现国密tls的依赖包。jdk 在1.8的不同版本中该包位置有变动，较低版本为sun.security.ec.CurveDB，
+// 较高版本为sun.security.util.CurveDB。
+import sun.security.util.CurveDB;
 
 import java.net.URL;
 import java.security.Provider;
