@@ -10,6 +10,7 @@ class MyData {
     AtomicInteger num = new AtomicInteger();
 
     public void addTo60() {
+        System.out.println();
         this.number = 60;
         this.num.set(50);
     }
